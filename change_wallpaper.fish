@@ -32,5 +32,8 @@ set DB_PATH ~/Library/Application\ Support/Dock/desktoppicture.db
 				 VALUES $input_string"
 	sqlite3 $DB_PATH $SQL_CMD
 
+	# Delete old log-in blurred background
+	rm /Library/Caches/com.apple.desktop.admin.png
+	
 	killall Dock
 end
