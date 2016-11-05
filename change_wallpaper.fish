@@ -29,7 +29,7 @@ function change_wallpaper --description "Change wallpaper on every Desktop"
 
 	# Add new entries to the table
 	set SQL_CMD "INSERT INTO preferences
-				 VALUES $input_string"
+		     VALUES $input_string"
 	sqlite3 $DB_PATH $SQL_CMD
 
 	# Delete old log-in blurred background
