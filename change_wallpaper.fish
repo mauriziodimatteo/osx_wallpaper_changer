@@ -1,7 +1,7 @@
 
 function change_wallpaper --description "Change wallpaper on every Desktop"
 
-set DB_PATH ~/Library/Application\ Support/Dock/desktoppicture.db
+	set DB_PATH ~/Library/Application\ Support/Dock/desktoppicture.db
 
 	# Build SQLite commands:
 	# - Delete old data from desktoppicture.db
